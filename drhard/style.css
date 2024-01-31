@@ -1,0 +1,189 @@
+* {
+    border: 0px;
+    margin: 5px;
+    padding: 0px;
+    box-sizing: border-box;
+    min-width: 0;
+}
+body{
+    width: auto;
+    height: auto;
+    /* background-color: #004087; */
+    background-color: rgb(30, 70, 163);
+    justify-content: center;
+}
+@media(max-width:768px){
+    #layout{
+        flex-direction: column;
+    }
+}
+#layout {
+    width: auto ;
+    height: auto;
+    background-color: #0000ff;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px; /* Espacio entre las tarjetas */
+}
+#menu{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #07ecf9;
+    width: auto;
+    /*   */
+    /* padding: 5px; */
+    margin: 10px;
+}
+.icono{
+    width: 250px;
+    margin-right: auto;
+}
+.enlaces{
+    font-family: roboto;
+    font-size: 15px;
+    text-align: center;
+}
+    
+#atencion{
+    width: auto;
+    background-color: #0000ff;
+    text-decoration: double;
+    font-family: roboto;
+    margin: 5px;
+    padding: 5px;
+}
+.titulo {
+    /* background-color: #FE630B; */
+    width: auto;
+    border-radius: 5px;
+    color: rgb(232,221,215);
+    font-family: roboto;
+    font-size: 50px;
+    text-align: center;
+    padding: 5px;
+    
+    
+}
+
+.icono{
+    display: flex;
+    justify-content: left;
+
+}
+
+
+#valor{
+    width: auto;
+    background-color: blue;
+    color: beige;
+    font-family: roboto;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+#grow1 {
+    font-family: roboto;
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados para el contenedor */
+    overflow: hidden; /* Para asegurar que los bordes redondeados se apliquen correctamente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para simular una tarjeta */
+    transition: transform 0.3s ease-in-out;
+    height: auto; /* Altura fija para las tarjetas */
+    width: auto;
+    margin: 10px; /* Margen entre la tarjeta y otras tarjetas */
+    background-color: #07ecf9;
+    
+}
+#grow1 h3 {
+    color: #0000ff;
+}
+#grow1 p{
+    color: #0000ff;
+    
+}
+
+#grow1:hover {
+    transform: scale(1.05); /* Efecto de escala al pasar el ratón para simular interactividad */
+}
+
+#grow1 img {
+    max-width: 100%;
+    height: 70%; /* Altura específica para la imagen dentro de la tarjeta */
+    object-fit: cover; /* Ajusta la imagen para cubrir completamente su contenedor manteniendo las proporciones */
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 15px; /* Margen entre la imagen y el párrafo */
+    margin: 5px;
+    
+}
+
+
+#grow1 p {
+    padding: 10px;
+    height: 30%; /* Altura específica para el párrafo dentro de la tarjeta */
+    overflow: hidden; /* Para evitar que el texto sobresalga si es demasiado largo */
+}
+
+/* #pregunta{
+    width: 1336px;
+    background-color: red;
+    color:black;
+    font-family: roboto;
+    font-size: 20px;
+    text-align: center;
+} */
+
+#ubicacion {
+    width: 100%;
+    background-color:white;
+    color: white;
+    text-align: center;
+    padding: 20px 0; /* Ajusta el relleno según tus necesidades */
+}
+
+.map-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* Proporción 16:9 para mantener el aspecto del mapa */
+}
+
+.map-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#direccion{
+    background-color: black;
+    color:white;
+    font-family: roboto;
+    font-size: 15px;
+    width: auto;
+    height: auto;
+    padding: 10%;
+    text-align: center;
+   
+
+}
+#nosotros{
+    width: auto;
+    background-color: #0000ff;
+    border-radius: 10px;
+    color:  #07ecf9;
+    font-family: roboto;
+    text-align: center;
+    padding: 15%;
+}
+#coordinar{
+    width: auto;
+    background-color: #0000ff;
+    border-radius: 10px;
+    color: #07ecf9;
+    font-family: roboto;
+    text-align: center;
+    padding: 15%;
+}
